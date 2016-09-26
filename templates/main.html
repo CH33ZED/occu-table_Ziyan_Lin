@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <h1><center><font size = '20' color='blue'>Jobs!</font></h1>
+  </head>
+  <body>
+  <table border='1'>
+{% for ras in listing%}
+    <tr>  <td> {{ras}} </td>  <td> {{listing[ras]}}</td></tr>
+{% endfor %}
+</table>
+<font size = "40" color='green'> Your job is {{pref}} </font>
+</body>
+</HTML>"
