@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import random
 
 app = Flask(__name__)
-@app.route("/")
 
 
 def stuff():
@@ -38,11 +37,12 @@ def a():
     return g
 
 
+@app.route("/")
       
 def main():
      ga = a()
      ea = stuff()
-     return render_template("main.html", listing = ga, perf = ea)
+     return render_template("main.html", listing = ga, pref = ea)
   
 
 if __name__ =="__main__":
